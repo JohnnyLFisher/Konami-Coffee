@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Konami's Coffee House</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+		  integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+	<script src="https://kit.fontawesome.com/10517977d2.js" crossorigin="anonymous"></script>
+	<style>
+		body {
+			background-image: url('https://image.freepik.com/free-vector/realistic-coffee-background-with-drawings_79603-603.jpg');}
+
+	</style>
+	<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+<h1 id="main-head">Coffee!</h1>
+<hr>
+
+<table id="coffee-list">
+	<div>
+		<thead>
+		<tr>
+			<th>NAME</th>
+			<th>ROAST</th>
+		</tr>
+		</thead>
+	</div>
+	<div>
+		<tbody id="coffees"></tbody>
+	</div>
+</table>
+
+
+<div id="user-interface">
+	<form name="searchForm">
+		<div class="main-card card select">
+			<p class="card-header bg-primary text-light">Find Your Flavor</p>
+
+			<div class="card m-3 list-group">
+				<span class="list-group-item bg-light">Select Roast</span>
+
+
+				<div class="card-body mb-3">
+					<select class="form-control" name="search-roast" id="roast-selection">
+						<option value="all" selected id="roastA">All</option>
+						<option value="light" id="roast1">Light</option>
+						<option value="medium" id="roast2">Medium</option>
+						<option value="dark" id="roast3">Dark</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div class="card m-3 list-group">
+
+				<span class="list-group-item bg-light">Search Brew</span>
+				<div class="card-body list-group-item">
+					<input class="form-control" id="search" type="text">
+				</div>
+
+				<div class="card-footer bg-light d-flex flex-row-reverse">
+					<button class="btn btn-primary form-control" type="submit" id="submit1">
+						Submit
+						<!--				<i class="fas fa-angle-right"></i>-->
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+
+	<form name="addForm">
+		<div class="main-card card select">
+			<p class="card-header bg-primary text-light">Add your own!</p>
+
+			<div class="card m-3 list-group">
+				<span class="list-group-item bg-light">Select Roast</span>
+
+
+				<div class="card-body mb-3">
+					<select class="form-control" name="new-roast" id="new-roast">
+						<option value="default" selected disabled>....</option>
+						<option value="light">Light</option>
+						<option value="medium">Medium</option>
+						<option value="dark">Dark</option>
+					</select>
+				</div>
+
+			</div>
+
+			<div class="card m-3 list-group">
+
+				<span class="list-group-item bg-light">Enter Name</span>
+				<div class="card-body list-group-item">
+					<input class="form-control" id="new-name" type="text" value="">
+				</div>
+
+				<div class="card-footer bg-light d-flex flex-row-reverse">
+					<button class="btn btn-primary form-control" type="submit" id="submit2">
+						Submit
+						<!--				<i class="fas fa-angle-right"></i>-->
+					</button>
+				</div>
+			</div>
+		</div>
+	</form>
+</div>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+		integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+		crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"
+		integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut"
+		crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"
+		integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k"
+		crossorigin="anonymous"></script>
+
+
+<script src="main.js"></script>
+</body>
+</html>
